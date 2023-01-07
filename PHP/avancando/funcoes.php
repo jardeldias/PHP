@@ -26,6 +26,12 @@ function sacar(array $conta, float $valorASacar): array
     return $conta;
 }
 
+function exibirConta(array $conta)
+{
+    ['titular' => $titular, 'saldo' => $saldo] = $conta;
+    echo "<li>Titular: $titular Saldo: $saldo</li>";
+};
+
 /* Passagem por referência é muito perigoso,
 muita liberdade para se alterar uma variável,
 tornando mais imprevisível a cada uso.
